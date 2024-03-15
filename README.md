@@ -20,7 +20,8 @@ STEP-6: The cipher text is computed as messagee *
 STEP-7: Decryption is done as cipherdmod n.
 
 ## PROGRAM:
-```
+~~~
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -82,9 +83,9 @@ int decryptedMessage = decrypt(ciphertext, d, n);
 printf("Decrypted message: %d\n", decryptedMessage);
 return 0;
 }
-```
+~~~
 ## OUTPUT:
-![Screenshot 2024-03-05 113517](https://github.com/AlluguriSrikrishnateja/19CS412---CRYPTOGRAPHY---ADVANCED-ENCRYPTION/assets/118343892/b96f8704-db74-4fb0-835d-078d58644625)
+![Screenshot 2024-03-15 141814](https://github.com/shanmugapriyatharani/19CS412---CRYPTOGRAPHY---ADVANCED-ENCRYPTION/assets/119393427/ad5113c8-820d-4af5-b0d9-9354bc41a586)
 
 
 ## RESULT :
@@ -163,11 +164,10 @@ printf("Secret key for the Alice is : %lld\n", ka);
 printf("Secret Key for the Bob is : %lld\n", kb);
 return 0;
 }
+
 ```
 ## OUTPUT:
-
-<img width="342" alt="image" src="https://github.com/AlluguriSrikrishnateja/19CS412---CRYPTOGRAPHY---ADVANCED-ENCRYPTION/assets/118343892/a3f5b0fa-ef81-4215-9521-2a16c87cef68">
-
+![Screenshot 2024-03-15 141823](https://github.com/shanmugapriyatharani/19CS412---CRYPTOGRAPHY---ADVANCED-ENCRYPTION/assets/119393427/b79b6ebb-b9c0-4f1c-ab9d-91453c939389)
 
 ## RESULT: 
 
@@ -201,6 +201,7 @@ same process for the remaining plain text characters.
 
 ```
 from cryptography.fernet import Fernet
+print("Enter the string: ")
 message = input()
 key = Fernet.generate_key()
 fernet = Fernet(key)
@@ -211,10 +212,11 @@ print("encrypted string: ", encMessage)
 decMessage = fernet.decrypt(encMessage).decode()
  
 print("decrypted string: ", decMessage)
+
 ```
 ## OUTPUT:
+![Screenshot 2024-03-15 141116](https://github.com/shanmugapriyatharani/19CS412---CRYPTOGRAPHY---ADVANCED-ENCRYPTION/assets/119393427/273b0cb4-fa89-44f1-8c10-d72f4879fed1)
 
-<img width="756" alt="image" src="https://github.com/AlluguriSrikrishnateja/19CS412---CRYPTOGRAPHY---ADVANCED-ENCRYPTION/assets/118343892/23e74c08-7cea-4381-b9fe-97e247b17470">
 
 ## RESULT:
 
